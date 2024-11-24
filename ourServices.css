@@ -14,7 +14,7 @@ body {
 margin-top: 11vh;
 font-family: D, sans-serif;
 width: 100%;
-height: 400vh;
+height: 100%;
 background: rgb(217, 217, 217);
 background: linear-gradient(180deg, rgba(217, 217, 217, 1) 0%, rgba(5, 10, 48, 1) 80%);
 }
@@ -69,6 +69,89 @@ background-color: #ADADAD;
 scale: 10px;
 border-radius: 60px;
 }
+.Footer {
+margin-top: 2rem;
+width: 100%;
+height: auto;
+background-color: #050a30;
+display: flex;
+justify-content: space-between;
+padding-top: 0.5rem;
+}
+
+.ftrContnt {
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 15%;
+height: auto;
+color: #adadad;
+}
+
+.ftrContnt a {
+text-decoration: none;
+color: #adadad;
+font-family: "Montserrat", serif;
+}
+
+.ftrContnt p {
+font-family: "Montserrat", serif;
+}
+
+.titleftr {
+padding-bottom: 1rem;
+font-weight: bold;
+color: #d9d9d9;
+}
+
+.ftrIcons {
+display: flex;
+align-self: center;
+width: 15%;
+height: auto;
+}
+
+.ftrContnt section {
+display: flex;
+flex-direction: column;
+align-self: center;
+}
+
+#ftrImg {
+height: 10rem;
+width: 90%;
+}
+
+.ftrIcon {
+width: 100%;
+height: 3rem;
+}
+
+.iconlink {
+margin-left: 1rem;
+}
+
+#CompanyDiv {
+padding-left: 4rem;
+}
+
+.below {
+width: 100%;
+height: auto;
+background-color: #d9d9d9;
+display: flex;
+justify-content: center;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+}
+
+.below p {
+font-size: 1rem;
+font-family: "Montserrat", serif;
+font-style: italic;
+color: #264d7f;
+}
+
 .servicesRectangle {
   display: flex;
   justify-content: center;
@@ -89,6 +172,7 @@ border-radius: 60px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .servicesContainer{
   display: flex;
   flex-direction: column;
@@ -101,6 +185,7 @@ border-radius: 60px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .servicesContainerTop{
   display: flex;
   gap: 42px;
@@ -109,6 +194,7 @@ border-radius: 60px;
   padding-top: 37px;
   padding-bottom: 17px;
 }
+
 .servicesContainerBottom{
   display: flex;
   flex-direction: row;
@@ -116,6 +202,7 @@ border-radius: 60px;
   justify-content: center;
   padding-bottom: 37px;
 }
+
 .servicesText {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
@@ -126,6 +213,7 @@ border-radius: 60px;
   text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
   margin-bottom: 10px;
 }
+
 .servicePic{
   width: 270px;
   height: 150px;
@@ -133,6 +221,7 @@ border-radius: 60px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   object-fit: cover;
 }
+
 .serviceCom{
   width: 270px;
   height: 150px;
@@ -143,6 +232,7 @@ border-radius: 60px;
   background-position: 8% 20%; /* Adjusts the focal point */
   background-repeat: no-repeat;
 }
+
 .miniContainer {
   display: flex;
   flex-direction: column;
@@ -154,6 +244,7 @@ border-radius: 60px;
   border-radius: 74px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),0px 4px 4px rgba(0, 0, 0, 0.25),0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .navLogo {
   width: 85px;
   height: auto;
@@ -161,6 +252,7 @@ border-radius: 60px;
   margin-left: auto;
   margin-top: 8px;
 }
+
 .servicesCatBlue{
   background: -webkit-linear-gradient(90deg, #264D7F, #050A30);
   -webkit-background-clip: text;
@@ -207,14 +299,28 @@ border-radius: 60px;
   height: auto;
   margin-top: 20px;
   margin-right: auto;
-  margin-left: auto;  
+  margin-left: auto;
   object-fit: cover;
 }
 
-.pic{
-  width: 35rem;
-  height: 35rem;
+.pic {
+  width: 30rem; /* Default size */
+  height: 30rem;
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+  cursor: pointer;
 }
+
+.pic:hover {
+  transform: scale(1); /* Increase size on hover */
+  z-index: 1; /* Bring the hovered image to the front */
+}
+.pic:not(:hover) {
+  transform: scale(0.85); /* Increase size on hover */
+  z-index: 1; /* Bring the hovered image to the front */
+}
+
+
+
 
   
 
